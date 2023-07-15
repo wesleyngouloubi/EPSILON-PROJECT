@@ -1,0 +1,285 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  background: #fafafa;
+  box-shadow: inset 0px -1px 0px #c5c5c6;
+  z-index: 7;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-icon span {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 400;
+  color: #333;
+}
+
+.nav-icon img {
+  width: 120px;
+  margin-right: 5px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.navlinks-container a {
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #ebbb1b;
+  display: inline-block;
+  position: relative;
+}
+
+.navlinks-container a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #333;
+  transition: transform 0.3s ease-out;
+}
+
+.navlinks-container a:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-authentication {
+  margin-left: auto;
+}
+
+.sign-btn button {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  min-width: 90px;
+  padding: 10px 5px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.sign-btn button:nth-child(2) {
+  border: none;
+  background: rgba(101, 160, 211, 0.234);
+}
+
+.sign-user {
+  display: none;
+}
+
+.account-menu {
+  position: relative;
+}
+
+.account-menu-header {
+  display: block;
+  font-weight: bold;
+}
+
+.account-menu-items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+  display: none;
+  list-style-type: none;
+  
+}
+
+.account-menu-items a {
+display: block;
+padding: 5px;
+text-decoration: none;
+color: #333;
+font-weight: bold; 
+}
+
+.account-menu-items a:hover {
+background-color: #f0f0f0;
+color: dimgrey; 
+}
+
+
+.account-menu-items li {
+  margin-bottom: 5px;
+}
+
+.account-menu-items a {
+  display: block;
+  padding: 5px;
+}
+
+.account-menu-logout-btn {
+  display: block;
+  border: none;
+  background: none;
+  padding: 5px;
+}
+
+@media (max-width: 900px) {
+  nav {
+    padding: 15px 20px;
+    position: relative;
+  }
+
+  .nav-icon {
+    order: 2;
+    margin: 0 auto;
+  }
+
+  .nav-icon span {
+    font-size: 22px;
+  }
+
+  .main-navlinks {
+    order: 1;
+  }
+
+  /* Hamburger */
+  .hamburger {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    background: #fafafa;
+    align-items: center;
+    position: relative;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    pointer-events: none;
+    transition: opacity 0.3s 0.15s ease-out;
+  }
+
+  .hamburger span:nth-child(1),
+  .hamburger span:nth-child(3) {
+    transition: transform 0.3s ease-out;
+  }
+
+  .hamburger span:nth-child(1) {
+    transform: translateY(7px);
+  }
+
+  .hamburger span:nth-child(3) {
+    transform: translateY(-7px);
+  }
+
+  .hamburger.open span:nth-child(1) {
+    transform: translate(0) rotate(135deg);
+  }
+
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+    transition: opacity 0s ease-out;
+  }
+
+  .hamburger.open span:nth-child(3) {
+    transform: translate(0) rotate(-135deg);
+  }
+
+  .navlinks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    background: #fafafa;
+    top: 100%;
+    left: 0;
+    height: 100vh;
+    padding: 15px 50px 15px 20px;
+    border-right: 1px solid #c5c5c6;
+    transform: translate(-100%);
+  }
+
+  .open {
+    transform: translate(0%);
+  }
+
+  .navlinks-container a {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .nav-authentication {
+    order: 3;
+    margin-left: 0;
+  }
+
+  .sign-btn {
+    display: none;
+  }
+
+  .sign-user {
+    display: block;
+    cursor: pointer;
+    border: none;
+  }
+
+  .sign-user img {
+    width: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-icon img {
+    width: 60px;
+  }
+
+  .nav-icon span {
+    font-size: 20px;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 17px;
+  background-color: #ebbb1b;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #bebec4;
+  color: black;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(166, 109, 66, 0.4);
+}
+
+

@@ -1,0 +1,44 @@
+
+#bg-equipe {
+background-image: url('/image/bg1-image.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 90vh;
+width: 100%;
+}
+
+.container {
+max-width: 500px;
+padding: 40px;
+text-align: center;
+}
+
+h2 {
+font-size: 2em;
+display: flex;
+justify-content: center;
+align-items: center;
+/* margin-right: 25em; */
+margin-top: 2.2em;
+text-shadow: 1px 1px 2px black;
+line-height: 1.2em;
+text-align: center;
+color: #fac900;
+}
+
+.btn-warning {
+background-color: #ffbc00;
+color: #fff;
+border-color: #ffbc00;
+transition: background-color 0.3s ease;
+}
+
+.btn-warning:hover {
+background-color: #ff9800;
+border-color: #ff9800;
+}
+
+.fas {
+margin-right: 5px;
+}

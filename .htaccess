@@ -1,0 +1,5 @@
+ErrorDocument 404 /core/gestion_error/error-404.php
+ErrorDocument 500 /core/gestion_error/error-500.php
+ErrorDocument 400 /core/gestion_error/error-400.php
+ErrorDocument 403 /core/gestion_error/error-403.php
+Options -Indexes

@@ -1,0 +1,57 @@
+/* Styles généraux du footer */
+footer {
+background-color: #000000;
+padding: 20px;
+color: aliceblue;
+width: 100%;
+position: bottom;
+}
+
+.footer-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.footer-section {
+width: 30%;
+}
+
+.footer-section h3 {
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+.footer-section p {
+margin-bottom: 10px;
+}
+
+.footer-section ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-section ul li {
+margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+color: #333;
+text-decoration: none;
+}
+
+.footer-bottom {
+margin-top: 20px;
+text-align: center;
+}
+
+.footer-bottom p {
+font-size: 14px;
+color: #777;
+}
+
+/* Styles spécifiques pour le lien actif */
+.footer-section ul li a.active {
+color: #ff0000;
+font-weight: bold;
+}

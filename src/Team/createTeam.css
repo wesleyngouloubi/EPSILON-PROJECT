@@ -1,0 +1,56 @@
+
+#bg-equipe {
+    background : url('/image/bg1-image.jpg');
+    
+}
+
+.team-form {
+max-width: 400px;
+margin: 0 auto;
+}
+
+.team-form .form-outline {
+position: relative;
+}
+
+.team-form .form-outline input {
+padding: 0.5rem;
+font-size: 16px;
+border: none;
+border-bottom: 2px solid #ccc;
+transition: border-color 0.3s ease;
+}
+
+.team-form .form-outline input:focus {
+outline: none;
+border-color: #5c7cfa;
+}
+
+.team-form .form-outline label {
+position: absolute;
+top: 0;
+left: 0;
+padding: 0.5rem;
+font-size: 16px;
+color: #aaa;
+transition: all 0.3s ease;
+pointer-events: none;
+}
+
+.team-form .form-outline input:focus + label,
+.team-form .form-outline input:not(:placeholder-shown) + label {
+transform: translateY(-1.5rem);
+font-size: 12px;
+color: #5c7cfa;
+}
+
+.team-form .btn-primary {
+background-color: #5c7cfa;
+color: #fff;
+transition: background-color 0.3s ease;
+}
+
+.team-form .btn-primary:hover {
+background-color: #4560d8;
+}
+

@@ -1,0 +1,43 @@
+
+body {
+    background-color: bisque;
+}
+
+#design {
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+.animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40vh;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #43a047;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 2s infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .emoji {
+    font-size: 40px;
+    color: #fff;
+  }
+  

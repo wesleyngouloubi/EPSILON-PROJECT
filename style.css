@@ -1,0 +1,222 @@
+/* Importe la police d'écriture */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto;
+}
+
+#image-background {
+  background : url('image/bg-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+  width: 100%;
+}
+
+#titleOne {
+  font-size: 6em;
+  font-family: arial;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+}
+
+#paragraph {
+  font-size: 2em;
+  font-family: arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 25em; */
+  margin-top: 2.2em;
+  text-shadow: 1px 1px 2px #333333;
+  line-height: 1.2em;
+  text-align: center;
+  color: #fac900;
+}
+
+.paragraphTwo {
+  display: flex;
+  margin: 20px 0px 5px 0px;
+
+}
+
+.paragraphTwo p {
+  margin-left: 15px;
+  margin-top: 30px;
+  text-indent: 20%;
+}
+
+.img-fluid {
+  width: 600px;
+}
+
+@media screen and (max-width: 900px){
+  #titleOne {
+    font-size: 3em;
+  }
+  #paragraph {
+    font-size: calc(0.2em + 0.3vw);
+  }
+  #btn-bg {
+    size: 0px;
+  }
+  .paragraphTwo img {
+    display: none;
+  }
+  .paragraphTwo p {
+    font-size: 0.8em;
+  }
+}
+
+#btn-bg {
+  font-size: 0.7em;
+  font-family: arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 40em; */
+}
+
+#btn-bg button:hover {
+  color: #fff;
+}
+
+
+#card-group {
+  z-index: 1;
+}
+
+.slogan {
+  margin: 5px 0px 5px 0px;
+  width: 100%;
+  height: 200px;
+  font-size: 1.4em;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-style: oblique;
+  text-shadow: 0.5px 0.5px 1px black;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
+.image {
+  width: 300px;
+  transition: transform .1s;
+}
+
+
+#bg-form {
+  /* background-color: #fff; */
+  border-radius: 30px;
+  width: 500px;
+  margin-top: 10px;
+}
+
+.form-check-input {
+  margin-right: 1em;
+}
+
+#birthday {
+  margin-bottom: 2em;
+}
+
+#text-bg {
+  margin-top: 2em;
+  margin-left: 1em;
+  margin-bottom: 2em;
+}
+
+.text-opacity {
+  opacity: 0.30;
+}
+
+.for-input {
+  margin-left: 5em;
+  margin-bottom: 1em;
+}
+
+.btn-register {
+  position: relative;
+  left: 70%;
+}
+
+#register {
+  position: relative;
+  left: 70%;
+}
+
+.dimension-input {
+  margin-bottom: 2em;
+}
+
+
+.telephone-input {
+  color: #999999; /* Couleur grise */
+  width: 60px;
+  display: flex;
+}
+
+.telephone-input::before {
+  content: "+33"; /* Contenu à afficher avant le champ */
+}
+
+.input-email {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+#btn-darkMode {
+  position: fixed;
+  width: 45px;
+  height: 22px;
+  right: 300px;
+  top: 25px;
+  border: 2px solid;
+  border-radius: 20px;
+  z-index: 7;
+}
+
+#btn-darkMode::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #333;
+  transition: 0.4s;
+}
+
+#btn-darkMode.active:before {
+    left: 24px;
+    background-color: #fff !important;
+    color: #333;
+}
+
+body.night {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+

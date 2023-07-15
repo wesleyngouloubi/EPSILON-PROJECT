@@ -1,0 +1,66 @@
+.breadcrumb {
+    padding: 0 .5rem;
+   
+}
+
+.breadcrumb ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding: 0;
+    
+}
+    
+.breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 .25rem;
+    content: ">";
+    
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: black;
+}
+
+#bg-register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Style pour masquer les étapes */
+/* .form-step {
+display: block;
+} */
+
+/* Style pour afficher l'étape active */
+.step.active {
+font-weight: bold;
+}
+
+  
+/* Style pour les boutons de navigation */
+.step {
+cursor: pointer;
+padding: 3px 6px;
+background-color: #fbfbfb;
+border-radius: 4px;
+
+}
+
+.step:hover {
+background-color: #f7b706;
+}
+
+.step:not(.active) {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
